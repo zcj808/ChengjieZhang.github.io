@@ -15,7 +15,7 @@ To address this, I joined associate professor [He Kong](https://www.sustech.edu.
 
 If you are interested in my research, feel free to contact me.
 
-<h2 style="font-size: 2.5em; font-weight: bold;">Publications</h2>
+<h2 style="font-size: 1.0em; font-weight: bold;">Publications</h2>
 <div style="display: flex; align-items: center; margin-bottom: 20px;">
 <div style="flex: 0 0 40%; padding-right: 20px;">
 <img src="https://github.com/zcj808/ChengjieZhang.github.io/blob/master/_pages/about_images/2025-TAES.png" alt="A GIF demonstrating the first paper's key contribution" style="max-width: 100%; height: auto; display: block;">
