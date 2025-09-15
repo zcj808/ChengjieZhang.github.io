@@ -22,8 +22,8 @@ Publications
 </div>
 <div style="flex: 1; padding-left: 20px;">
 <h3>Optimal Sensor Placement for Full-Set TDOA Localization Accounting for Sensor Location Errors</h3>
-<p><strong>Chengjie Zhang, Xinyang Han, He Kong, KC Ho</p>
-<p><strong><em>IEEE Transactions on Aerospace and Electronic Systems (TAES)</em>, 2025</p>
+<p><strong>Chengjie Zhang, Xinyang Han, He Kong, KC Ho</strong></p>
+<p><strong><em>IEEE Transactions on Aerospace and Electronic Systems (TAES)</em>, 2025</strong></p>
 <p><strong>Abstract:</strong> This work designs OSP by accounting for the presence of Gaussian sensor position errors that are independent and identically distributed (IID), with the full set of time difference of arrival measurements corrupted by Gaussian IID noise. We show that the presence of sensor position errors introduces a multiplication factor to the same criterion for the case without sensor position errors."</p>
 <p>
 [<a href="[https://your_paper_link.com](https://ieeexplore.ieee.org/abstract/document/10972121)" target="_blank">Paper</a>]
