@@ -26,7 +26,7 @@ Publications
 <p style="font-size: 0.9em; font-weight: normal;"><em>IEEE Transactions on Aerospace and Electronic Systems (TAES)</em>, 2025</p>
 <p><strong>Abstract:</strong> This work designs OSP by accounting for the presence of Gaussian sensor position errors that are independent and identically distributed (IID), with the full set of time difference of arrival measurements corrupted by Gaussian IID noise. We show that the presence of sensor position errors introduces a multiplication factor to the same criterion for the case without sensor position errors."</p>
 <p>
-[<a href="[https://ieeexplore.ieee.org/abstract/document/10972121](https://ieeexplore.ieee.org/abstract/document/10972121)" target="_blank">Paper</a>]
+[<a href="https://ieeexplore.ieee.org/abstract/document/10972121" target="_blank">Paper</a>]
 <!-- [<a href="https://your_project_page_link.com" target="_blank">Project Page</a>] -->
 <!-- [<a href="https://github.com/your_github_link" target="_blank">Code</a>] -->
 </p>
