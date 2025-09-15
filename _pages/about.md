@@ -18,7 +18,7 @@ If you are interested in my research, feel free to contact me.
 Publications
 <div style="display: flex; align-items: center; margin-bottom: 20px;">
 <div style="flex: 0 0 40%; padding-right: 20px;">
-<img src="/_pages/about_images/2025-TAES.png" alt="A GIF demonstrating the first paper's key contribution" style="max-width: 100%; height: auto; display: block;">
+<img src="https://github.com/zcj808/ChengjieZhang.github.io/blob/master/_pages/about_images/2025-TAES.png" alt="A GIF demonstrating the first paper's key contribution" style="max-width: 100%; height: auto; display: block;">
 </div>
 <div style="flex: 1; padding-left: 20px;">
 <h3 style="margin-bottom: 0.5em; line-height: 1.2;">Optimal Sensor Placement for Full-Set TDOA Localization Accounting for Sensor Location Errors</h3>
