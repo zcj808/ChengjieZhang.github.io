@@ -18,7 +18,7 @@ If you are interested in my research, feel free to contact me.
 Publications
 <div style="display: flex; align-items: center; margin-bottom: 20px;">
 <div style="flex: 0 0 40%; padding-right: 20px;">
-<img src="/assets/images/your_first_paper_demo.gif" alt="A GIF demonstrating the first paper's key contribution" style="max-width: 100%; height: auto; display: block;">
+<img src="/_pages/about_images/2025-TAES.png" alt="A GIF demonstrating the first paper's key contribution" style="max-width: 100%; height: auto; display: block;">
 </div>
 <div style="flex: 1; padding-left: 20px;">
 <h3>Your First Paper Title: A Concise and Descriptive Subtitle</h3>
