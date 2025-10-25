@@ -162,18 +162,22 @@
     <!-- Firebase 和 统计脚本 --><script type="module">
         // 导入 Firebase 模块
         import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
-        import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getAuth, signInAnonymously, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
         import { getFirestore, doc, runTransaction, onSnapshot, setLogLevel } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
         // --- 1. Firebase 配置 ---
-        // 使用 Canvas 提供的全局变量
-        const firebaseConfig = typeof __firebase_config !== 'undefined' 
-            ? JSON.parse(__firebase_config) 
-            : { apiKey: "YOUR_FALLBACK_API_KEY", authDomain: "...", projectId: "..." }; // 在本地测试时替换
+        // 重要：请在此处粘贴您自己的 Firebase 项目配置
+        // 您需要去 Firebase 官网 (https://firebase.google.com/) 创建一个新项目
+        // 然后在项目设置中找到您的 "Web 应用" 配置对象并粘贴在这里。
+        const firebaseConfig = {
+          apiKey: "YOUR_API_KEY", // 替换为您自己的
+          authDomain: "YOUR_AUTH_DOMAIN", // 替换为您自己的
+          projectId: "YOUR_PROJECT_ID", // 替换为您自己的
+          storageBucket: "YOUR_STORAGE_BUCKET", // 替换为您自己的
+          messagingSenderId: "YOUR_SENDER_ID", // 替换为您自己的
+          appId: "YOUR_APP_ID" // 替换为您自己的
+        };
         
-        const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
-        const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
-
         let db, auth, userId;
 
         // 设置日志级别以便调试
@@ -189,42 +193,24 @@
             fetchUserIP();
 
             // --- 4. 认证和 Firestore 操作 ---
+            // 在公共网站上，我们直接使用匿名登录
+            await signInAnonymously(auth);
+
             onAuthStateChanged(auth, async (user) => {
                 if (user) {
-                    // console.log("Firebase 认证成功:", user.uid);
+                    // console.log("Firebase 匿名认证成功:", user.uid);
                     userId = user.uid;
                     // 认证成功后，更新并监听访问量
                     await updateAndTrackVisits();
                 } else {
-                    // console.log("用户未认证，尝试登录...");
-                    await signIn();
+                    console.error("Firebase 匿名登录失败");
+                    document.getElementById('visit-count').innerText = "统计认证失败";
                 }
             });
-
-            // 尝试登录
-            await signIn();
 
         } catch (error) {
             console.error("Firebase 初始化或操作失败:", error);
             document.getElementById('visit-count').innerText = "统计服务出错";
-        }
-
-        /**
-         * 登录函数
-         * 优先使用 Canvas 提供的令牌，否则匿名登录
-         */
-        async function signIn() {
-            try {
-                if (initialAuthToken) {
-                    // console.log("使用 custom token 登录...");
-                    await signInWithCustomToken(auth, initialAuthToken);
-                } else {
-                    // console.log("使用匿名方式登录...");
-                    await signInAnonymously(auth);
-                }
-            } catch (error) {
-                console.error("Firebase 登录失败:", error);
-            }
         }
 
         /**
@@ -246,14 +232,14 @@
          * 更新和监听访问量
          */
         async function updateAndTrackVisits() {
-            if (!db || !appId) {
-                console.error("Firestore DB 或 AppID 未初始化");
+            if (!db) {
+                console.error("Firestore DB 未初始化");
                 return;
             }
 
-            // 定义一个公共文档的引用来存储访问量
-            // 路径: /artifacts/{appId}/public/data/analytics/page-visits
-            const visitDocRef = doc(db, 'artifacts', appId, 'public', 'data', 'analytics', 'page-visits');
+            // 定义一个简单的、公共的文档路径来存储访问量
+            // 路径: /analytics/page-visits
+            const visitDocRef = doc(db, 'analytics', 'page-visits');
 
             // 1. 使用事务来增加计数器 (防止并发问题)
             try {
@@ -289,5 +275,4 @@
     </script>
 </body>
 </html>
-
 
