@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>您的名字 - 个人学术主页</title>
-    <!-- 引入 Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <title>Chengjie Zhang - 个人学术主页</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* 使用 Inter 字体（Tailwind 默认） */
         body {
@@ -12,154 +12,344 @@
         }
     </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-100 text-black">
 
-    <!-- 主内容容器 --><div class="max-w-6xl mx-auto p-4 sm:p-8 bg-white shadow-lg rounded-lg mt-10 mb-10">
+    <div class="max-w-6xl mx-auto p-4 sm:p-8 bg-white shadow-lg rounded-lg mt-10 mb-10">
 
-        <!-- 弹性布局：md 及以上为两栏 --><div class="flex flex-col md:flex-row md:space-x-10">
+        <div class="flex flex-col md:flex-row md:space-x-10">
 
-            <!-- ======================= --><!--   左侧个人信息栏        --><!-- ======================= --><aside class="w-full md:w-1/4 md:flex-shrink-0">
+            <aside class="w-full md:w-1/4 md:flex-shrink-0">
                 <div class="sticky top-8 text-center md:text-left">
-                    <!-- 个人头像 - 已修改为圆角矩形 --><img src="https://placehold.co/160x160/e2e8f0/64748b?text=Your\nPhoto" 
+                    <img src="./zcj.png" 
                          alt="个人头像" 
-                         class="w-36 h-36 rounded-md mx-auto md:mx-0 shadow-md">
+                         class="w-36 h-48 rounded-md mx-auto md:mx-10 shadow-md object-cover">
                     
-                    <!-- 姓名和头衔 --><h1 class="text-3xl font-bold mt-5">您的名字</h1>
-                    <p class="text-lg text-gray-600 mt-1">您的职称或简介</p>
-                    <p class="text-md text-gray-500 mt-1">(例如: 博士生 / 教授)</p>
+                    <h1 class="text-3xl font-bold mt-5">Chengjie Zhang</h1>
+                    <p class="text-md text-black text-2xl mt-1">Master Student</p>
 
-                    <!-- 位置信息 --><div class="flex items-center justify-center md:justify-start space-x-2 mt-4 text-gray-600">
-                        <!-- Location Icon --><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                        <span>中国，北京</span>
+                    <div class="flex items-center justify-center md:justify-start space-x-2 mt-4 text-black">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <span>China, Shenzhen</span>
                     </div>
 
-                    <!-- 链接列表 --><nav class="mt-6 space-y-3">
-                        <!-- 邮箱 --><a href="mailto:your.email@example.com" class="flex items-center justify-center md:justify-start space-x-3 text-gray-700 hover:text-blue-600 transition-colors">
-                            <!-- Mail Icon --><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                            <span>电子邮箱</span>
-                        </a>
-                        <!-- 个人简历 --><a href="#" class="flex items-center justify-center md:justify-start space-x-3 text-gray-700 hover:text-blue-600 transition-colors">
-                            <!-- CV Icon (File) --><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-                            <span>个人简历 (CV)</span>
-                        </a>
-                        <!-- GitHub --><a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center md:justify-start space-x-3 text-gray-700 hover:text-blue-600 transition-colors">
-                            <!-- GitHub Icon --><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></path></svg>
+                    <nav class="mt-6 space-y-3">
+                        <div class="flex items-center justify-center md:justify-start space-x-3 text-black">
+                            <span class="text-base font-normal">12332644@mail.sustech.edu.cn</span>
+                        </div>
+                        <a href="https://github.com/zcj808" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center md:justify-start space-x-3 text-black hover:text-blue-600 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></path></svg>
                             <span>GitHub</span>
                         </a>
-                        <!-- Google Scholar --><a href="https://scholar.google.com/citations?user=your-id" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center md:justify-start space-x-3 text-gray-700 hover:text-blue-600 transition-colors">
-                            <!-- Google Scholar Icon --><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5.242 13.769L0 9.5L12 0l12 9.5l-5.242 4.269C17.548 11.241 14.978 9 12 9s-5.548 2.241-6.758 4.769zM12 10c-1.657 0-3 1.343-3 3s1.343 3 3 3s3-1.343 3-3s-1.343-3-3-3z"/></svg>
+                        <a href="https://scholar.google.com/citations?user=kE1pB4MAAAAJ&hl=zh-CN" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center md:justify-start space-x-3 text-black hover:text-blue-600 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5.242 13.769L0 9.5L12 0l12 9.5l-5.242 4.269C17.548 11.241 14.978 9 12 9s-5.548 2.241-6.758 4.769zM12 10c-1.657 0-3 1.343-3 3s1.343 3 3 3s3-1.343 3-3s-1.343-3-3-3z"/></svg>
                             <span>Google Scholar</span>
                         </a>
                     </nav>
                 </div>
             </aside>
 
-            <!-- ======================= --><!--   右侧主内容区          --><!-- ======================= --><main class="w-full md:w-3/4 mt-10 md:mt-0">
+            <main class="w-full md:w-3/4 mt-10 md:mt-0">
                 
-                <!-- 导航栏 --><nav class="flex space-x-6 border-b pb-3 mb-8">
-                    <a href="#about" class="text-lg font-semibold text-blue-600 hover:text-blue-800">主页</a>
-                    <a href="#news" class="text-lg font-semibold text-gray-600 hover:text-blue-800">新闻</a>
-                    <a href="#projects" class="text-lg font-semibold text-gray-600 hover:text-blue-800">项目</a>
-                    <a href="#publications" class="text-lg font-semibold text-gray-600 hover:text-blue-800">出版物</a>
-                </nav>
-
-                <!-- 关于我 --><section id="about" class="mb-10">
-                    <h2 class="text-2xl font-bold border-l-4 border-blue-600 pl-3 mb-4">关于我 (About Me)</h2>
-                    <div class="space-y-4 text-gray-700 leading-relaxed">
+                <section id="about" class="mb-10">
+                    <h2 class="text-2xl font-bold pl-3 mb-4">About Me</h2>
+                    <div class="space-y-4 text-black leading-relaxed">
                         <p>
-                            这里是您的个人介绍。您可以在这里详细介绍您的研究方向、学术背景和兴趣点。例如：我目前是 [您的大学] 的一名 [您的职称]，隶属于 [您的院系或实验室]。
+                            SUSTech M.S. '26 | Advised by <a href="https://scholar.google.com/citations?hl=zh-CN&user=J7UkpAIAAAAJ" target="_blank" class="text-blue-600 hover:underline">Hong Zhang</a>. Previously, advised by <a href="https://www.sustech.edu.cn/en/faculties/fuchenglong.html" target="_blank" class="text-blue-600 hover:underline">Chenglong Fu</a>, <a href="https://www.sustech.edu.cn/en/faculties/konghe.html" target="_blank" class="text-blue-600 hover:underline">He Kong</a>.
+                            Focus on imitation learning for robotic manipulation. Aim to boost productivity through simple & practical solutions to real-world constraints, rather than being a 'paper printer'.                    
                         </p>
                         <p>
-                            我的研究兴趣主要集中在 [领域一]、[领域二] 和 [领域三]。我致力于解决 [您想解决的具体问题]。欢迎查看我的项目和出版物，并通过电子邮件与我联系！
+                            Previous robotics research experience:
                         </p>
+                        <ul class="list-disc list-inside ml-6 text-black">
+                            <li><strong>Human–Robot Interaction (HRI)</strong>: Mixed Reality (MR)–assisted grasping, Brain–Computer Interfaces (BCI), and EMG control.</li>
+                            <li><strong>Nonlinear Parameter Estimation</strong>: Spatio-temporal calibration for wireless sensors and optimal sensor placement.</li>
+                            <li><strong>Robotic Navigation</strong>: Visual Teach-and-Repeat (VT&amp;R).</li>
+                        </ul>
                     </div>
                 </section>
 
-                <!-- 新闻 --><section id="news" class="mb-10">
-                    <h2 class="text-2xl font-bold border-l-4 border-blue-600 pl-3 mb-4">新闻 (News)</h2>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700">
-                        <li><span class="font-semibold">[2025.10]</span> 我们的论文 "[论文标题]" 被 [会议名称] 接收。</li>
-                        <li><span class="font-semibold">[2025.08]</span> 非常高兴能在 [会议/活动名称] 上发表演讲。</li>
-                        <li><span class="font-semibold">[2025.01]</span> 开始在 [公司/机构名称] 实习。</li>
-                    </ul>
-                </section>
-
-                <!-- 选定项目 --><section id="projects" class="mb-10">
-                    <h2 class="text-2xl font-bold border-l-4 border-blue-600 pl-3 mb-4">选定项目 (Selected Projects)</h2>
+                <section id="projects" class="mb-10">
+                    <h2 class="text-2xl font-bold pl-3 mb-4">Projects</h2>
                     
                     <div class="space-y-8">
                         
-                        <!-- 项目 1 --><div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 p-4 border rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                            <!-- 动图 (GIF) --><img src="https://placehold.co/400x225/e2e8f0/64748b?text=Project+GIF+1" 
-                                 alt="项目1的动图"
-                                 class="w-full sm:w-48 md:w-60 h-auto object-cover rounded-md flex-shrink-0 bg-gray-200">
-                            
-                            <!-- 文字介绍 --><div class="flex-grow">
-                                <h3 class="text-xl font-semibold text-blue-700">项目标题一：一个很棒的研究</h3>
-                                <p class="text-gray-600 mt-1">
-                                    <span class="font-semibold">您的名字</span>, 合作者A, 合作者B
+                        <div class="flex flex-row space-x-6">
+                            <div class="flex-grow">
+                                <h3 class="text-lg font-semibold">Few-Shot Robot Manipulation via Flow Matching</h3>
+                                <p class="text-black mt-1 text-sm">
+                                    <span class="font-semibold">Independent Project</span>
                                 </p>
-                                <p class="text-gray-500 italic mt-1">
-                                    发表于 [会议/期刊名称], 2025
+                                <p class="text-black italic mt-1 text-sm">
+                                    Feb. 2026 – Present
                                 </p>
-                                <p class="text-gray-700 mt-2">
-                                    这里是关于这个项目的简短描述，说明了它的主要贡献和实现的技术。
-                                </p>
+                                <ul class="text-black mt-2 text-sm list-disc pl-5 space-y-2">
+                                    <li>
+                                        <span class="font-semibold">Cup Hanging:</span> Apply Improved DAgger and Flow Matching to achieve spatial generalization with only 71 demonstrations (98% success rate).
+                                    </li>
+                                    <li>
+                                        <span class="font-semibold">T-Shirt Lifting:</span> Achieve a 90% success rate in lifting T-shirt top layer using Flow Matching with just 30 demonstrations.
+                                    </li>
+                                </ul>
                                 <div class="flex space-x-4 mt-3 font-medium">
-                                    <a href="#" class="text-blue-600 hover:underline">[论文]</a>
-                                    <a href="#" class="text-blue-600 hover:underline">[代码]</a>
-                                    <a href="#" class="text-blue-600 hover:underline">[演示]</a>
+                                    <a href="https://youtu.be/yHeGHfZGJ6Q?si=wfl8nxcQhXQHsysn" target="_blank" class="text-blue-600 hover:underline">[Cup Video]</a>
+                                    <a href="https://youtu.be/m6WQKohCvNo?si=ZpW9O4M1Otbzq9k_" target="_blank" class="text-blue-600 hover:underline">[T-Shirt Video]</a>
                                 </div>
+                            </div>
+                            
+                            <div class="flex flex-col space-y-4 flex-shrink-0">
+                                <img src="./hang_cups.gif" 
+                                    alt="Cup Hanging Demo"
+                                    width="289" loading="lazy"
+                                    class="max-w-full h-auto object-contain">
+                                <img src="./T-shirt.gif" 
+                                    alt="T-Shirt Folding Demo"
+                                    width="289" loading="lazy"
+                                    class="max-w-full h-auto object-contain">
                             </div>
                         </div>
 
-                        <!-- 项目 2 --><div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 p-4 border rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                            <!-- 动图 (GIF) --><img src="https://placehold.co/400x225/e2e8f0/64748b?text=Project+GIF+2" 
-                                 alt="项目2的动图"
-                                 class="w-full sm:w-48 md:w-60 h-auto object-cover rounded-md flex-shrink-0 bg-gray-200">
-                            
-                            <!-- 文字介绍 --><div class="flex-grow">
-                                <h3 class="text-xl font-semibold text-blue-700">项目标题二：另一个创新工作</h3>
-                                <p class="text-gray-600 mt-1">
-                                    <span class="font-semibold">您的名字</span>, 合作者C
+                        <div class="flex flex-row space-x-6">
+                            <div class="flex-grow">
+                                <h3 class="text-lg font-semibold">Visual Teach-and-Repeat Navigation System</h3>
+                                <p class="text-black italic mt-1 text-sm">
+                                    Feb. 2024 – Jun. 2024
                                 </p>
-                                <p class="text-gray-500 italic mt-1">
-                                    发表于 [会议/期刊名称], 2024
-                                </p>
-                                <p class="text-gray-700 mt-2">
-                                    这是另一个项目的描述，突出了其新颖性以及它解决的关键挑战。
+                                <p class="text-black text-sm">
+                                    Human teleoperates the robot to build a local map and trajectory; the robot then autonomously navigates by following the trajectory.
                                 </p>
                                 <div class="flex space-x-4 mt-3 font-medium">
-                                    <a href="#" class="text-blue-600 hover:underline">[论文]</a>
-                                    <a href="#" class="text-blue-600 hover:underline">[代码]</a>
+                                    <a href="https://youtu.be/QVUUlOrtUEc" target="_blank" class="text-blue-600 hover:underline">[Video]</a>
                                 </div>
                             </div>
+                            
+                            <img src="./visual_teach_repeat.gif" 
+                                alt="Visual Teach-and-Follow Demo"
+                                width="289" loading="lazy"
+                                class="max-w-full h-auto flex-shrink-0 object-contain self-start">
                         </div>
 
                     </div>
                 </section>
 
-                <!-- 出版物 (可在此处添加更多) --><section id="publications">
-                    <!-- 可以在这里仿照 "News" 部分，用列表形式添加更多出版物 --></section>
+                <section id="publications" class="mb-10">
+                    <h2 class="text-2xl font-bold pl-3 mb-4">Publications</h2>
+                    
+                    <div class="space-y-8">
+                        
+                        <div class="flex flex-row space-x-6">
+                            <div class="flex-grow">
+                                <h3 class="text-lg font-semibold">Optimal Sensor Placement for Full-Set TDOA Localization Accounting for Sensor Location Errors</h3>
+                                <p class="text-black mt-1 text-sm">
+                                    <span class="font-semibold">C. Zhang</span>, X. Han, H. Kong, K. C. Ho
+                                </p>
+                                <p class="text-black italic mt-1 text-sm">
+                                    IEEE Transactions on Aerospace and Electronic Systems (TAES), 2025
+                                </p>
+                                <ul class="text-black mt-2 text-sm list-disc pl-5 space-y-1">
+                                    <li>
+                                        Prove that the theoretical bounds of wireless localization accuracy with and without sensor position errors are linearly related, and their optimal placement solutions are equivalent.
+                                    </li>
+                                    <li>
+                                        6-page paper, 4 simulations, concise and elegant conclusion.
+                                    </li>
+                                </ul>
+                                <div class="flex space-x-4 mt-3 font-medium">
+                                    <a href="https://ieeexplore.ieee.org/document/10972121" class="text-blue-600 hover:underline">[paper]</a>
+                                </div>
+                            </div>
+                               <img src="./TAES2025_2.png" 
+                                   alt="项目1的动图"
+                                   width="289" height="183" loading="lazy"
+                                   class="max-w-full h-auto flex-shrink-0 object-contain">
+                        </div>
 
-            </main>
+                        
+
+                        <div class="flex flex-row space-x-6">
+                            <div class="flex-grow">
+                                <h3 class="text-lg font-semibold">Calibration of Multiple Asynchronous Microphone Arrays using Hybrid TDOA</h3>
+                                <p class="text-black mt-1 text-sm">
+                                    <span class="font-semibold">C. Zhang</span>, W. Pan, X. Han, H. Kong
+                                </p>
+                                <p class="text-black italic mt-1 text-sm">
+                                    IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2025
+                                </p>
+                                <p class="text-black mt-2 text-sm">
+                                    Extend Hybrid-TDOA to multi-array calibration by introducing a two-stage method.
+                                </p>
+                                <div class="flex space-x-4 mt-3 font-medium">
+                                    <a href="https://ieeexplore.ieee.org/abstract/document/10889908" class="text-blue-600 hover:underline">[paper]</a>
+                                    <a href="https://github.com/zcj808/Hybrid-TDOA-Multi-Calib" class="text-blue-600 hover:underline">[code]</a>
+                                </div>
+                            </div>
+                            <img src="./calib_multi_mic_icassp.png"
+                                 alt="audio calibration scenario"
+                                 width="300" height="168" loading="lazy"
+                                 class="max-w-full h-auto flex-shrink-0 object-contain">
+                        </div>
+
+                        <div class="flex flex-row space-x-6">
+                            <div class="flex-grow">
+                                <h3 class="text-lg font-semibold">Asynchronous Microphone Array Calibration using Hybrid TDOA Information</h3>
+                                <p class="text-black mt-1 text-sm">
+                                    <span class="font-semibold">C. Zhang</span>, J. Wang, H. Kong
+                                </p>
+                                <p class="text-black italic mt-1 text-sm">
+                                    International Conference on Intelligent Robots and Systems (IROS), 2024
+                                </p>
+                                <p class="text-black mt-2 text-sm">
+                                    Proposed Hybrid-TDOA integrates conventional TDOA with TDOA-S, a novel measurement to reduce parameter redundancy and enhance estimation accuracy.
+                                </p>
+                                <div class="flex space-x-4 mt-3 font-medium">
+                                    <a href="https://ieeexplore.ieee.org/abstract/document/10801363" class="text-blue-600 hover:underline">[paper]</a>
+                                    <a href="https://github.com/zcj808/Hybrid-TDOA-Calib" class="text-blue-600 hover:underline">[code]</a>
+                                </div>
+                            </div>
+                            <img src="./audio_calibration_scenario_iros.gif"
+                                 alt="audio calibration scenario"
+                                 width="333" height="187" loading="lazy"
+                                 class="max-w-full h-auto flex-shrink-0 object-contain">
+                        </div>
+
+                        <div class="flex flex-row space-x-6">
+                            <div class="flex-grow">
+                                <h3 class="text-lg font-semibold">An effective head-based HRI for 6D robotic grasping using mixed reality</h3>
+                                <p class="text-black mt-1 text-sm">
+                                    <span class="font-semibold">C. Zhang</span>, C. Lin, Y. Leng, Z. Fu, Y. Cheng, C. Fu
+                                </p>
+                                <p class="text-black italic mt-1 text-sm">
+                                    IEEE Robotics and Automation Letters, 2023
+                                </p>
+                                <p class="text-black mt-2 text-sm">
+                                    A novel integration of head movements and Mixed Reality (MR) to assist users with motor impairments in grasping everyday objects, including transparent and reflective items.
+                                </p>
+                                <div class="flex space-x-4 mt-3 font-medium">
+                                    <a href="https://ieeexplore.ieee.org/document/10080982" class="text-blue-600 hover:underline">[paper]</a>
+                                    <a href="https://youtu.be/QO72XT8BYGs" class="text-blue-600 hover:underline">[video]</a>
+                                </div>
+                            </div>
+                               <img src="./mr_control_ral.gif" 
+                                   alt="项目1的动图"
+                                   width="333" height="187" loading="lazy"
+                                   class="max-w-full h-auto flex-shrink-0 object-contain">
+                        </div>
+
+                        <div class="flex flex-row space-x-6">
+                            <div class="flex-grow">
+                                <h3 class="text-lg font-semibold">Neural correlation of EEG and eye movement in natural grasping intention estimation</h3>
+                                <p class="text-black mt-1 text-sm">
+                                    C. Lin, <span class="font-semibold">C. Zhang</span>, J. Xu, R. Liu, Y. Leng, C. Fu
+                                </p>
+                                <p class="text-black italic mt-1 text-sm">
+                                    IEEE Transactions on Neural Systems and Rehabilitation Engineering, 2023
+                                </p>
+                                <p class="text-black mt-2 text-sm">
+                                    EEG and eye movements are consistent in natural grasp intent.
+                                </p>
+                                <div class="flex space-x-4 mt-3 font-medium">
+                                    <a href="#" class="text-blue-600 hover:underline">[paper]</a>
+                                </div>
+                            </div>
+                            <img src="./eeg_tnsre.png" alt="placeholder" width="259" height="146" loading="lazy" class="max-w-full h-auto flex-shrink-0 object-contain">
+                        </div>
+
+                        <div class="flex flex-row space-x-6">
+                            <div class="flex-grow">
+                                <h3 class="text-lg font-semibold">Voluntary-redundant hybrid control of SuperLimb based on redundant muscle for on-site assembly tasks</h3>
+                                <p class="text-black mt-1 text-sm">
+                                    C. Lin, <span class="font-semibold">C. Zhang</span>, X. Yan, Y. Leng, C. Fu
+                                </p>
+                                <p class="text-black italic mt-1 text-sm">
+                                    IEEE Robotics and Automation Letters, 2023
+                                </p>
+                                <p class="text-black mt-2 text-sm">
+                                    A human-robot collaboration system based on a wearable robotic arm, utilizing redundant leg EMG signals for control.
+                                </p>
+                                <div class="flex space-x-4 mt-3 font-medium">
+                                    <a href="#" class="text-blue-600 hover:underline">[paper]</a>
+                                </div>
+                            </div>
+                            <img src="./emg_control_ral.png" alt="placeholder" width="229" height="135" loading="lazy" class="max-w-full h-auto flex-shrink-0 object-contain">
+                        </div>
+
+                    </div>
+                </section>
+
+                <section id="honors" class="mb-10">
+                    <h2 class="text-2xl font-bold pl-3 mb-4">Honors & Awards</h2>
+                    
+                    <div class="space-y-3 text-black leading-relaxed text-sm">
+                        
+                        <div class="flex justify-between items-start">
+                            <div>
+                                National Graduate Scholarship, SUSTech <span class="font-semibold">(&lt;1%)</span>
+                            </div>
+                            <div class="italic shrink-0 ml-4">2025</div>
+                        </div>
+
+                        <div class="flex justify-between items-start">
+                            <div>
+                                Special Graduate Academic Scholarship, SUSTech <span class="font-semibold">(&lt;5%)</span>
+                            </div>
+                            <div class="italic shrink-0 ml-4">2024, 2025</div>
+                        </div>
+
+                        <div class="flex justify-between items-start">
+                            <div>
+                                Outstanding Graduate Award, SUSTech <span class="font-semibold">(&lt;10%)</span>
+                            </div>
+                            <div class="italic shrink-0 ml-4">2023</div>
+                        </div>
+
+                        <div class="flex justify-between items-start">
+                            <div>
+                                Guangdong Provincial Key "Climbing Program" <span class="font-semibold">(Only 2 at SUSTech, Completed)</span>
+                            </div>
+                            <div class="italic shrink-0 ml-4">2022</div>
+                        </div>
+
+                        <div class="flex justify-between items-start">
+                            <div>
+                                First-Prize Outstanding Student Award, SUSTech <span class="font-semibold">(&lt;5%)</span>
+                            </div>
+                            <div class="italic shrink-0 ml-4">2021</div>
+                        </div>
+
+                    </div>
+                </section>
+
+                </main>
         </div>
 
-        <!-- ======================= --><!--   页脚 - 访问统计       --><!-- ======================= --><footer class="text-center mt-12 pt-8 border-t text-gray-500 text-sm">
-            <div class="space-y-2">
-                <p>
-                    您的IP地址: <span id="ip-address" class="font-semibold text-gray-600">正在加载...</span>
-                </p>
-                <p>
-                    网站总访问量: <span id="visit-count" class="font-semibold text-gray-600">正在加载...</span>
-                </p>
+        <footer class="mt-12 pt-8 pb-4 border-t text-black text-sm">
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+                
+                <div class="text-center md:text-left space-y-1">
+                    <p class="text-gray-700">IP: <span id="ip-address" class="font-mono font-semibold text-black">正在加载...</span></p>
+                    <p class="text-gray-700">Visits: <span id="visit-count" class="font-mono font-semibold text-black">正在加载...</span></p>
+                </div>
+                
+                <div class="hidden md:block w-px h-10 bg-gray-300"></div>
+                
+                <div class="w-40 opacity-90 hover:opacity-100 transition-opacity">
+                    <a href="https://www.revolvermaps.com/livestats/5m13x2d3tq1/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://rf.revolvermaps.com/h/m/a/0/ff0000/ffffff/0/5m13x2d3tq1.png" 
+                             alt="Visitor Map" 
+                             width="256" height="128" 
+                             class="w-full h-auto object-contain border border-gray-100 shadow-sm rounded">
+                    </a>
+                </div>
+                
             </div>
-            <p class="mt-4">&copy; 2025 您的名字. 保留所有权利。</p>
+            
+            <div class="text-center mt-6 text-gray-500 text-xs">
+                <p>&copy; 2026 Chengjie Zhang. 保留所有权利。</p>
+            </div>
         </footer>
 
     </div>
 
-    <!-- Firebase 和 统计脚本 --><script type="module">
+    <script type="module">
         // 导入 Firebase 模块
         import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
         import { getAuth, signInAnonymously, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
@@ -167,8 +357,6 @@
 
         // --- 1. Firebase 配置 ---
         // 重要：请在此处粘贴您自己的 Firebase 项目配置
-        // 您需要去 Firebase 官网 (https://firebase.google.com/) 创建一个新项目
-        // 然后在项目设置中找到您的 "Web 应用" 配置对象并粘贴在这里。
         const firebaseConfig = {
           apiKey: "YOUR_API_KEY", // 替换为您自己的
           authDomain: "YOUR_AUTH_DOMAIN", // 替换为您自己的
@@ -180,9 +368,6 @@
         
         let db, auth, userId;
 
-        // 设置日志级别以便调试
-        // setLogLevel('debug');
-
         try {
             // --- 2. 初始化 Firebase ---
             const app = initializeApp(firebaseConfig);
@@ -193,14 +378,11 @@
             fetchUserIP();
 
             // --- 4. 认证和 Firestore 操作 ---
-            // 在公共网站上，我们直接使用匿名登录
             await signInAnonymously(auth);
 
             onAuthStateChanged(auth, async (user) => {
                 if (user) {
-                    // console.log("Firebase 匿名认证成功:", user.uid);
                     userId = user.uid;
-                    // 认证成功后，更新并监听访问量
                     await updateAndTrackVisits();
                 } else {
                     console.error("Firebase 匿名登录失败");
@@ -237,11 +419,9 @@
                 return;
             }
 
-            // 定义一个简单的、公共的文档路径来存储访问量
-            // 路径: /analytics/page-visits
             const visitDocRef = doc(db, 'analytics', 'page-visits');
 
-            // 1. 使用事务来增加计数器 (防止并发问题)
+            // 1. 使用事务来增加计数器
             try {
                 await runTransaction(db, async (transaction) => {
                     const visitDoc = await transaction.get(visitDocRef);
@@ -250,10 +430,8 @@
                         const data = visitDoc.data();
                         newCount = (data.count || 0) + 1;
                     }
-                    // 写入或覆盖文档
                     transaction.set(visitDocRef, { count: newCount });
                 });
-                // console.log("访问量增加成功!");
             } catch (e) {
                 console.error("访问量事务处理失败: ", e);
                 document.getElementById('visit-count').innerText = "计数失败";
@@ -264,15 +442,13 @@
                 if (doc.exists()) {
                     document.getElementById('visit-count').innerText = doc.data().count;
                 } else {
-                    document.getElementById('visit-count').innerText = "1"; // 可能是第一次访问
+                    document.getElementById('visit-count').innerText = "1";
                 }
             }, (error) => {
-                console.error("监听访问量失败:", error);
+                console.error("监听访问量失败", error);
                 document.getElementById('visit-count').innerText = "加载失败";
             });
         }
-
     </script>
 </body>
 </html>
-
